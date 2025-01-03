@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="header-div">
+        <div class="title">~Etch-A-Sketch~</div>
+        <div class="instruction">Drag your mouse over the grid to colour it in!
+        </div>
+    </div>
+    <div class="bottom-part-div">
+        <div class="left-pane"></div>
+        <div class="right-pane f">
+            <div class="pen-color-row-div f p">
+                <div class="pen-color-div f">Pen Colour :</div>
+                <div class="pen-picker-div f"><input class="pen-picker" id="picker" type="color"></div>
+            </div>
+            <div class="slidecontainer f p">
+                <input type="range" min="1" max="100" value="20" class="custom-slider" id="myRange">
+            </div>
+            <div class="js-grid-number-div f p"></div>
+            <div class="clear-button-div f p ">
+                <button class="clear-button f b" onclick="clearButtonClicked()">Clear</button>
+            </div>
+            <div class="color-button-div f p">
+                <button class="color-button f b " onclick="colorButtonClicked()">Colour Mode</button>
+            </div>
+            <div class="rainbow-button-div f p">
+                <button class="rainbow-button f b" onclick="rainbowButtonClicked()">Rainbow Mode</button>
+            </div>
+            <div class="eraser-button-div f p">
+                <button class="eraser-button f b " onclick="eraserButtonClicked()">Eraser Mode</button>
+            </div>
+              
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
