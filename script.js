@@ -1,6 +1,7 @@
 const slider = document.getElementById('myRange');
 const sliderValue = document.querySelector('.js-grid-number-div');
 let size = 20;
+document.querySelector('.color-button').classList.add('clicked');
 updateSliderValue(size);
 let mode = 'color';
 let color = 'black';
